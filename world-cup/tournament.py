@@ -16,7 +16,12 @@ def main():
 
     teams = []
     # TODO: Read teams into memory from file
-    file
+    filename = sys.argv[1]
+    with open (filename) as f:
+        reader = csv.DictReader(f)
+        for team in reader:
+            team["rating"] = int(team["rating"])
+            teams.append(team)
 
 
 
