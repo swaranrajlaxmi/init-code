@@ -23,8 +23,6 @@ def main():
             TeamRow["rating"] = int(TeamRow["rating"])
             teams.append(TeamRow)
 
-
-
     counts = {}
     # TODO: Simulate N tournaments and keep track of win counts
     for i in range(N):
@@ -33,8 +31,6 @@ def main():
             counts[winner] += 1
         else:
             counts[winner] = 1
-
-
 
 
 # Print each team's chances of winning, according to simulation
