@@ -17,7 +17,7 @@ def main():
     teams = []
     # TODO: Read teams into memory from file
     filename = sys.argv[1]
-    with open (filename) as file:
+    with open(filename) as file:
         reader = csv.DictReader(file)
         for TeamRow in reader:
             TeamRow["rating"] = int(TeamRow["rating"])
@@ -37,7 +37,7 @@ def main():
 
 
 
-    # Print each team's chances of winning, according to simulation
+# Print each team's chances of winning, according to simulation
     for team in sorted(counts, key=lambda team: counts[team], reverse=True):
         print(f"{team}: {counts[team] * 100 / N:.1f}% chance of winning")
 
