@@ -24,16 +24,16 @@ def user_input():
 def calculate_coins():
     count = 0
     while cents > 0:
-        while cents >= 25:
+        if cents >= 25:
             count += 1
             cents -= 25
-        while cents >= 10:
+        elif cents >= 10:
             count += 1
             cents -= 10
-        while cents >= 5:
+        elif cents >= 5:
             count += 1
             cents -= 5
-        while cents >= 1:
+        elif cents >= 1:
             count += 1
             cents -= 1
     return count
