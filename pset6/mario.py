@@ -7,7 +7,8 @@ import importlib
 def main():
     height = get_height()
     for i in range(height):
-        
+        for j in range(height):
+            if 
 
 
 def get_height():
