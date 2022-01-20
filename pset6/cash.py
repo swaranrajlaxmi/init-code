@@ -1,14 +1,9 @@
 import importlib
+import cs50
 
 def main():
     # prompt user for change owed
-    while True:
-        try:
-            dollar = get_float("change owed: ")
-            if n > 0:
-                break
-        except ValueError:
-            print("Enter a valid value")
+    dollar = get_float()
     # converting the user’s inputted dollars to cents
     cents = round(int(dollar * 100))
     coins = calculate_coins()
