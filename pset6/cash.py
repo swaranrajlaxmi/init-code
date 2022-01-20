@@ -1,5 +1,5 @@
 import importlib
-import cs50
+from cs50 import get_float
 
 def main():
     # prompt user for change owed
