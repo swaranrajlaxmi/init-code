@@ -6,7 +6,8 @@ def main():
     # printing hash as like both right and left alighned pyramid
     for i in range(height):
         width = ((2 * height) + 2)
-        for j in range()
+        for j in range(width):
+            
 
 
 def get_height():
