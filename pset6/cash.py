@@ -3,14 +3,14 @@ import cs50
 
 def main():
     # prompt user for change owed
-    dollar = get_float()
+    dollar = user_input()
     # converting the user’s inputted dollars to cents
     cents = round(int(dollar * 100))
     coins = calculate_coins()
     print(coins)
 
 
-def get_float():
+def user_input():
     while True:
         try:
             n = get_float("change owed: ")
