@@ -10,4 +10,5 @@ def main():
 
 def get_height():
     while True:
-        
+        try:
+            
