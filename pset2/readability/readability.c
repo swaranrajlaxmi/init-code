@@ -12,11 +12,11 @@ int main(void)
 {
     //Get input text from the user
     string text = get_string("Text: ");
-    
+
     //count for letters, words, and sentences in the text
     int n = strlen(text);
     int words = 1;
-    
+
     for (int i = 0; i < n; i++)
     {
         if (isalnum(text[i]) || islower(text[i]) || isupper(text[i]))
@@ -31,13 +31,13 @@ int main(void)
         {
             sentences++;
         }
-        
+
     }
    // printf("%i, %i, %i\n", letters, words, sentences);
 
     // calculate coleman liau index
     index = round(0.0588 * ((letters * 100) / (float) words) - 0.296 * ((sentences * 100) / (float)words) - 15.8);
-    
+
 
     //grade level
     x = index;
@@ -50,12 +50,13 @@ int main(void)
     }
     else if (x <= 1)
     {
-        printf("Before Grade 1\n");
+        printf("style50 readability.py
+\n");
     }
     else
     {
         printf("Grade %i\n", x);
     }
 
-   
+
 }
