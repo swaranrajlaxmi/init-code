@@ -2,7 +2,7 @@ import importlib
 
 def main():
     # prompt user for change owed
-    dollar = get_dollar()
+    dollar = get_float()
     # converting the user’s inputted dollars to cents
     cents = round(int(dollar * 100))
     coins = calculate_coins()
@@ -26,7 +26,7 @@ def calculate_coins():
             cents -= 1
 
 
-def get_dollar():
+def get_float():
     while True:
         try:
             n = get_float("change owed: ")
