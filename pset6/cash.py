@@ -1,8 +1,12 @@
 import importlib
 
 def main():
-    #//prompt user for change owed
+    # prompt user for change owed
     dollar = get_dollar()
+    # converting the user’s inputted dollars to cents
+    cents = round(int(dollar * 100))
+    
+
 
 def get_dollar():
     while True:
@@ -10,5 +14,11 @@ def get_dollar():
             n = get_float("change owed: ")
             if n > 0
                 break
-            except ValueError:
-                print("")
+        except ValueError:
+            print("Enter a valid value")
+     return n
+
+
+main()
+
+
