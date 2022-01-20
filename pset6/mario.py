@@ -5,6 +5,7 @@ import importlib
 
 def main():
     height = get_height()
+    # printing hash as like right alighned pyramid
     for i in range(height):
         for j in range(height):
             if j < (height-(i+1)):
@@ -15,6 +16,7 @@ def main():
 
 
 def get_height():
+    # prompt the user for height untill the given condition is met
     while True:
         try:
             n = int(input("Height: "))
