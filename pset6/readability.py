@@ -11,6 +11,8 @@ for i in range(TextLength):
     if (text[i].isalpha()):
         letters += 1
     elif (isspace(text[i])):
+        words += 1
+    elif ()
  print(letters)
 
 
