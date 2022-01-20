@@ -7,4 +7,4 @@ def main():
 def get_float():
     while True:
         try:
-            
+            Dollar = 
