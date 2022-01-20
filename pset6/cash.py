@@ -36,6 +36,7 @@ def calculate_coins():
         while cents >= 1:
             count += 1
             cents -= 1
+    return count
 
 
 main()
