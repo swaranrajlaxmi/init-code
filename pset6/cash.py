@@ -9,6 +9,17 @@ def main():
     print(coins)
 
 
+def get_float():
+    while True:
+        try:
+            n = get_float("change owed: ")
+            if n > 0:
+                break
+        except ValueError:
+            print("Enter a valid value")
+    return n
+
+
 def calculate_coins():
     count = 0
     while cents > 0:
@@ -24,17 +35,6 @@ def calculate_coins():
         while cents >= 1:
             count += 1
             cents -= 1
-
-
-def get_float():
-    while True:
-        try:
-            n = get_float("change owed: ")
-            if n > 0:
-                break
-        except ValueError:
-            print("Enter a valid value")
-    return n
 
 
 main()
