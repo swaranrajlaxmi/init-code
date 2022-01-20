@@ -5,7 +5,8 @@ def main():
     height = get_height()
     # printing hash as like both right and left alighned pyramid
     for i in range(height):
-        print(" " * (height _1) + )
+        # print spaces and hashes
+        print(" " * (height _1) + "#" * (i)
 
 
 def get_height():
