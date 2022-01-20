@@ -7,6 +7,7 @@ def main():
     for i in range(height):
         width = ((2 * height) + 2)
         for j in range(width):
+            if 
             print("#", end="")
         print()
 
