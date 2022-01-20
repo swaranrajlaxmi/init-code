@@ -18,7 +18,7 @@ for i in range(TextLength):
 print(letters)
 print(words)
 print(sentences)
-
+# calculate coleman liau index
 
 
 
