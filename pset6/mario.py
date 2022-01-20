@@ -11,7 +11,7 @@ def main():
             if j<(height-(i+1)):
                 print(" ", end="")
             else:
-                print("#", end="")
+                print("#")
 
 
 def get_height():
