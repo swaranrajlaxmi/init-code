@@ -4,3 +4,5 @@ import importlib
 
 
 
+def main():
+    h = int(input("height))
