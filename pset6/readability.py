@@ -10,7 +10,7 @@ sentences = words = letters = 0
 for i in range(TextLength):
     if (text[i].isalpha()):
         letters += 1
-    if ():
+    elif (isspace(text[i])):
  print(letters)
 
 
