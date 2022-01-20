@@ -9,3 +9,6 @@ def get_dollar():
         try:
             n = get_float("change owed: ")
             if n > 0
+                break
+            except ValueError:
+                print("")
