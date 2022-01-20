@@ -20,7 +20,12 @@ print(words)
 print(sentences)
 # calculate coleman liau index
 index = round(0.0588 * ((letters * 100) / (float) words) - 0.296 * ((sentences * 100) / (float)words) - 15.8);
-
+if (index >= 16):
+    print("Grade 16+")
+elif (index <=1):
+    print("Before Grade 1")
+else:
+    print(f"Grade {index}")
 
 
 
