@@ -4,7 +4,7 @@ import importlib
 def main():
     height = get_height()
     # printing hash as like both right and left alighned pyramid
-    for i in range(1, height):
+    for i in range(1, height + 1):
         # print spaces and hashes
         print(" " * (height - (i + 1)) + "#" * i, end="")
         # print 2 spaces
@@ -19,7 +19,7 @@ def get_height():
     while True:
         try:
             n = int(input("Height: "))
-            if n > 0 and n <= 8:
+            if n > 0 and n < 9:
                 break
             print("Invalid")
         except ValueError:
