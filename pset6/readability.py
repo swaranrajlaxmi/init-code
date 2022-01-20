@@ -8,7 +8,8 @@ TextLength = len(text)
 sentences = words = letters = 0
 # count for letters, words, and sentences in the text
 for i in range(TextLength):
-    if (text.)
+    if (text[i].isalpha()):
+        
 
 
 
