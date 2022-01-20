@@ -16,3 +16,7 @@ def get_height():
             print("Invalid")
         except ValueError:
             print("That's not an integer")
+    return n
+
+
+main()
