@@ -4,7 +4,7 @@ import importlib
 def main():
     height = get_height()
     # printing hash as like both right and left alighned pyramid
-    for i in range(height):
+    for i in range(1, height):
         # print spaces and hashes
         print(" " * (height - (i + 1)) + "#" * i, end="")
         # print 2 spaces
