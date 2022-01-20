@@ -30,11 +30,11 @@ def get_dollar():
     while True:
         try:
             n = get_float("change owed: ")
-            if n > 0
+            if n > 0:
                 break
         except ValueError:
             print("Enter a valid value")
-     return n
+    return n
 
 
 main()
