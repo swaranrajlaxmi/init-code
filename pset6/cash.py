@@ -6,7 +6,7 @@ def main():
     dollar = user_input()
     # converting the user’s inputted dollars to cents
     cents = round(int(dollar * 100))
-    coins = calculate_coins()
+    coins = calculate_cents()
     print(coins)
 
 
@@ -21,7 +21,7 @@ def user_input():
     return n
 
 
-def calculate_coins():
+def calculate_cents():
     count = 0
     while cents > 0:
         if cents >= 25:
