@@ -12,8 +12,8 @@ for i in range(TextLength):
         letters += 1
     elif (isspace(text[i])):
         words += 1
-    elif ()
- print(letters)
+    elif (text[i] == "." or text[i] == "?" or text[i] == "!"):
+        sentences += 1
 
 
 
