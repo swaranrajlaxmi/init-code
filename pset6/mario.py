@@ -10,7 +10,7 @@ def main():
         for j in range(height):
             if j<(height-(i+1)):
                 print(" ", end="")
-            else
+            else:
                 print("#", end="")
 
 
@@ -18,7 +18,7 @@ def get_height():
     while True:
         try:
             n = int(input("Height: "))
-            if n<0 or n>8
+            if n<0 or n>8:
             break
         except ValueError:
             print("That's not an integer!")
