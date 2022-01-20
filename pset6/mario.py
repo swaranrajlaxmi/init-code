@@ -7,7 +7,6 @@ def main():
     for i in range(height):
         print((height - 1 - i) * " ", end="")
         print((i + 1) * "#")
-        print()
 
 
 def get_height():
