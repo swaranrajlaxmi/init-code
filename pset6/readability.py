@@ -5,7 +5,8 @@ import importlib
 text = input("Text: ")
 TextLength = len(text)
 # initialise parameters
-sentences = words = letters = 0
+sentences =letters = 0
+words = 1
 # count for letters, words, and sentences in the text
 for i in range(TextLength):
     if (text[i].isalpha()):
