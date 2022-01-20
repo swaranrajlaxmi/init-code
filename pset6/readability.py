@@ -5,3 +5,4 @@ import importlib
 text = input("Text: ")
 TextLength = len(text)
 
+
