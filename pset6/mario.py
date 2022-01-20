@@ -8,7 +8,11 @@ def main():
     height = get_height()
     for i in range(height):
         for j in range(height):
-            print("#", end="")
+            if j<(height-(i+1)):
+                print(" ", end="")
+            else:
+                print("#")
+                
 
 
 def get_height():
