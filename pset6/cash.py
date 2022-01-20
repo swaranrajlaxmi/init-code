@@ -2,9 +2,9 @@ import importlib
 
 def main():
     #//prompt user for change owed
-    dollar = get_float()
+    dollar = get_dollar()
 
-def get_float():
+def get_dollar():
     while True:
         try:
-            Dollar = 
+            Dollar = get_float
