@@ -5,7 +5,7 @@ def main():
     dollar = get_dollar()
     # converting the user’s inputted dollars to cents
     cents = round(int(dollar * 100))
-    
+    coins = 
 
 
 def get_dollar():
