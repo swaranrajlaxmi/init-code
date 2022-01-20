@@ -10,12 +10,13 @@ sentences = words = letters = 0
 for i in range(TextLength):
     if (text[i].isalpha()):
         letters += 1
-    elif (isspace(text[i])):
+    elif (text[i].isspace()):
         words += 1
     elif (text[i] == "." or text[i] == "?" or text[i] == "!"):
         sentences += 1
 print(letters)
-
+print(words)
+print(sentences)
 
 
 
