@@ -7,4 +7,4 @@ def main():
 def get_dollar():
     while True:
         try:
-            Dollar = get_float("")
+            Dollar = get_float("change owed:, ")
