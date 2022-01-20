@@ -10,6 +10,7 @@ def main():
 
 
 def calculate_coins():
+    count = 0
     
 
 
