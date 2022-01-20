@@ -7,7 +7,8 @@ def main():
     for i in range(height):
         width = ((2 * height) + 2)
         for j in range(width):
-            
+            print("#", end="")
+        print()
 
 
 def get_height():
