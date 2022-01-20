@@ -14,6 +14,8 @@ for i in range(TextLength):
         words += 1
     elif (text[i] == "." or text[i] == "?" or text[i] == "!"):
         sentences += 1
+print(letters)
+
 
 
 
