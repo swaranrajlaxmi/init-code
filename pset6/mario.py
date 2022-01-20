@@ -6,7 +6,7 @@ def main():
     # printing hash as like both right and left alighned pyramid
     for i in range(1, height + 1):
         # print spaces and hashes
-        print(" " * (height - (i + 1)) + "#" * i, end="")
+        print(" " * (height - i) + "#" * i, end="")
         # print 2 spaces
         print(" " * 2, end="")
         # print right hashes
