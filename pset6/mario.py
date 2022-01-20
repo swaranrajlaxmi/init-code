@@ -3,8 +3,9 @@ import importlib
 
 def main():
     height = get_height()
-    
     # printing hash as like both right and left alighned pyramid
+    for i in range(height):
+        
 
 
 def get_height():
