@@ -5,4 +5,9 @@ import importlib
 
 
 def main():
-    h = int(input("height))
+    height = get_height()
+
+
+def get_height():
+    while True:
+        
