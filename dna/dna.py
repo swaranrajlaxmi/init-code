@@ -7,8 +7,8 @@ def main():
     # TODO: Check for command-line usage
     if len(sys.argv) != 3:
         sys.exit("Usage: python dna.py data.csv sequence.txt")
-        db_csv = sys.argv[1]
-        seq_txt = sys.argv[2]
+    db_csv = sys.argv[1]
+    seq_txt = sys.argv[2]
 
     # TODO: Read database file into a variable
     with open(db_csv, "r") as csvfiles:
