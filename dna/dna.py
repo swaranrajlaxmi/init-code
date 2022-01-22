@@ -12,15 +12,19 @@ def main():
 
     # TODO: Read database file into a variable
     with open(db_csv, "r") as csvfile:
-        reader = csv.DictReader(csvfile) # database is in a table format
-        ListOfDict = list(reader) # reader object stored as a list of dictionaries
+        reader = csv.DictReader(csvfile)
+        # database is in a table format
+        ListOfDict = list(reader)
+        # reader object stored as a list of dictionaries
 
     # TODO: Read DNA sequence file into a variable
     with open(seq_txt, "r") as file:
-        sequence = file.read() # read using the read() method on the file object.
+        sequence = file.read()
+        # read using the read() method on the file object.
         # This returns the contents of the file as a string.
 
     # TODO: Find longest match of each STR in DNA sequence
+    
 
     # TODO: Check database for matching profiles
 
