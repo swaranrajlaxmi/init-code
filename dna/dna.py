@@ -12,11 +12,10 @@ def main():
     with open(argv[1], "r") as csvfiles:
         reader = csv.DictReader(csvfile) # database is in a table format
         ListOfDict = list(reader) # reader object stored as a list of dictionaries
-        
-
-
 
     # TODO: Read DNA sequence file into a variable
+    with open(argv[2], "r") as file:
+
 
     # TODO: Find longest match of each STR in DNA sequence
 
