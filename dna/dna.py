@@ -7,15 +7,16 @@ def main():
     # TODO: Check for command-line usage
     if len(sys.argv) != 3:
         sys.exit("Usage: python dna.py data.csv sequence.txt")
-        
+        db_csv = sys.argv[1]
+        seq_txt = sys.argv[2]
 
     # TODO: Read database file into a variable
-    with open(argv[1], "r") as csvfiles:
+    with open(db_csv, "r") as csvfiles:
         reader = csv.DictReader(csvfile) # database is in a table format
         ListOfDict = list(reader) # reader object stored as a list of dictionaries
 
     # TODO: Read DNA sequence file into a variable
-    with open(argv[2], "r") as file:
+    with open(seq_txt, "r") as file:
         sequence = file.read() # read using the read() method on the file object.
         # This returns the contents of the file as a string.
 
