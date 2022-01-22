@@ -11,7 +11,8 @@ def main():
     # TODO: Read database file into a variable
     with open(argv[1], "r") as csvfiles:
         reader = csv.DictReader(csvfile) # database is in a table format
-        ListOfDict = list(reader) #
+        ListOfDict = list(reader) # reader object stored as a list of dictionaries
+        
 
 
 
