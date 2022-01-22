@@ -11,7 +11,7 @@ def main():
     seq_txt = sys.argv[2]
 
     # TODO: Read database file into a variable
-    with open(db_csv, "r") as csvfiles:
+    with open(db_csv, "r") as csvfile:
         reader = csv.DictReader(csvfile) # database is in a table format
         ListOfDict = list(reader) # reader object stored as a list of dictionaries
 
