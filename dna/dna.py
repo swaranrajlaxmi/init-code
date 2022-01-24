@@ -15,7 +15,7 @@ def main():
         reader = csv.DictReader(csvfile)
         # database is in a table format
         ListOfDict = list(reader)
-        print(list[0])
+        print(f{})
         # reader object stored as a list of dictionaries
 
     # TODO: Read DNA sequence file into a variable
