@@ -15,6 +15,7 @@ def main():
         reader = csv.DictReader(csvfile)
         # database is in a table format
         ListOfDict = list(reader)
+        print(list[0])
         # reader object stored as a list of dictionaries
 
     # TODO: Read DNA sequence file into a variable
@@ -24,7 +25,7 @@ def main():
         # This returns the contents of the file as a string.
 
     # TODO: Find longest match of each STR in DNA sequence
-    
+
 
     # TODO: Check database for matching profiles
 
