@@ -39,8 +39,8 @@ def main():
         second_reader = csv.reader(csvfile1)
         for column in second_reader:
             print(column[1:])
-            if (max_count == line[1:]):
-                (print(f"{line[0]} is the match"))
+            if (max_count == column[1:]):
+                (print(f"{column[0]} is the match"))
             else:
                 print("No match")
 
