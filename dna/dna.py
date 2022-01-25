@@ -59,7 +59,7 @@ main()
 
 
 
-def longest_match(sequence, subsequence):
+"""def longest_match(sequence, subsequence):
     print(subsequence)
     """Returns length of longest run of subsequence in sequence."""
 
@@ -98,4 +98,4 @@ def longest_match(sequence, subsequence):
     return longest_run
 
 
-main()
+main()"""
