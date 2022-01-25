@@ -17,15 +17,16 @@ def main():
             row = reader.fieldnames[i]
             subsequence.append(row)
         # search for every STR)
-        print(subsequence)
+        #print(subsequence)
 
 
     # TODO: Read DNA sequence file into a variable
+    sequence = ''
     with open(sys.argv[2], "r") as file:
-        sequence = file.read()
-        for i in sequence:
-            
-        #print(sequence)
+        sequence_list = file.read()
+        for i in sequence_list:
+            sequence = sequence.join(i)
+        print(sequence)
         # read using the read() method on the file object.
         # This returns the contents of the file as a string.
 
@@ -41,7 +42,7 @@ def main():
         for line in reader:
             if (max_count == line[1:]):
                 (print(f"{line[0]} is the match"))
-        print("No match")
+        #print("No match")
 
     return
 
