@@ -23,6 +23,8 @@ def main():
     # TODO: Read DNA sequence file into a variable
     with open(sys.argv[2], "r") as file:
         sequence = file.read()
+        for i in sequence:
+            
         #print(sequence)
         # read using the read() method on the file object.
         # This returns the contents of the file as a string.
