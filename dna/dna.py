@@ -31,7 +31,7 @@ def main():
     max_count = []
     for i in range (len(subsequence[0])):
         max_count.append(compute_max(sequence, subsequence[0][i]))
-        print(max_count)
+    print(max_count)
 
 
     # TODO: Check database for matching profiles
@@ -46,7 +46,7 @@ def main():
 
     return
 
-def compute_max(sequence, subsequence[0][i]):
+def compute_max(sequence, subsequence):
     # make a list with the same length as the txt seq file
     list = [0] * len(sequence)
     for i in range(len(sequence) - len(subsequence) + 2):
