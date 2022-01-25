@@ -17,7 +17,7 @@ def main():
     # TODO: Read DNA sequence file into a variable
     sequencestring = ''
     with open(sys.argv[2], "r") as file:
-        sequence = file.(read)
+        sequence = file.read()
         #for i in sequence:
             #sequencestring = sequencestring.join(i)
         print(sequence)
