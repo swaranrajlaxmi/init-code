@@ -11,8 +11,7 @@ def main():
     # TODO: Read database file into a variable
     subsequence = []
     with open(sys.argv[1], "r") as csvfile:
-        reader = csv.DictReader(csvfile)
-        # database is in a table format
+        reader = csv.reader(csvfile)
         for i in range(1, len(reader.fieldnames)):
             row = reader.fieldnames[i]
             subsequence.append(row)
