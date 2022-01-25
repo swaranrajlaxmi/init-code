@@ -47,6 +47,8 @@ def main():
     return
 
 def compute_max(sequence, subsequence[0][i]):
+    # make a list with the same length as the txt seq file
+    list = [0] * len(sequence)
     
 
 
