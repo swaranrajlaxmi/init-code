@@ -14,7 +14,8 @@ def main():
         reader = csv.DictReader(csvfile)
         # database is in a table format
         for i in range(1, len(reader.fieldnames)):
-            STR_list = reader.fieldnames[i]
+            row = reader.fieldnames[i]
+            STR_list.append(row)
         # search for every STR)
         print(STR_list)
 
