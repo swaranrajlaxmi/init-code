@@ -17,7 +17,9 @@ def main():
     # TODO: Read DNA sequence file into a variable
     with open(argv[2], "r") as file:
         sequence = csv.reader(file)
-        for i in sequence
+        for i in sequence:
+            sequencestring = sequencestring.join(i)
+        print(sequencestring)
         # read using the read() method on the file object.
         # This returns the contents of the file as a string.
 
