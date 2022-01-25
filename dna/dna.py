@@ -37,9 +37,8 @@ def main():
         reader = csv.reader(csvfile)
         for line in reader:
             if (max_count == line[0:]):
-                print(f"{line[0]} is the match")
-            else:
-                print("No match")
+                exitprint(f"{line[0]} is the match")
+
     return
 
 
