@@ -9,12 +9,14 @@ def main():
         sys.exit("Usage: python dna.py data.csv sequence.txt")
 
     # TODO: Read database file into a variable
+    STR_list = []
     with open(sys.argv[1], "r") as csvfile:
         reader = csv.DictReader(csvfile)
         # database is in a table format
         for line in reader:
             # search for every STR
-            
+            STR_list = reader.append(line[1:])
+        print(STR_list)
 
 
 
