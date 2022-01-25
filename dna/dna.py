@@ -14,8 +14,9 @@ def main():
         reader = csv.reader(csvfile)
         for line in reader:
             subsequence.append(line[1:])
-        # search for every STR)
-        #print(subsequence)
+        print(subsequence)
+            break
+
 
 
     # TODO: Read DNA sequence file into a variable
