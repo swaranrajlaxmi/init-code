@@ -17,8 +17,6 @@ def main():
             print(subsequence)
             break
 
-
-
     # TODO: Read DNA sequence file into a variable
     sequence = ''
     with open(sys.argv[2], "r") as file:
