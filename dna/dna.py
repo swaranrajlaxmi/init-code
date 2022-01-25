@@ -15,9 +15,9 @@ def main():
         # database is in a table format
         for i in range(1, len(reader.fieldnames)):
             row = reader.fieldnames[i]
-            STR_list.append(row)
+            subsequence.append(row)
         # search for every STR)
-        print(STR_list)
+        print(subsequence)
 
 
     # TODO: Read DNA sequence file into a variable
@@ -29,8 +29,8 @@ def main():
 
     # TODO: Find longest match of each STR in DNA sequence
     max_count = []
-    for i in range (len(STR_list[0])):
-        max_count.append(longest_match(sequence, STR_list))
+    for i in range (len(subsequence[0])):
+        max_count.append(longest_match(sequence, subsequence))
 
 
     # TODO: Check database for matching profiles
