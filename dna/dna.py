@@ -19,7 +19,6 @@ def main():
         print(STR_list)
 
 
-
     # TODO: Read DNA sequence file into a variable
     with open(sys.argv[2], "r") as file:
         sequence = file.read()
@@ -33,9 +32,11 @@ def main():
         max_count.append(longest_match(sequence, STR_list[0][i]))
 
 
-
     # TODO: Check database for matching profiles
-    
+    with open(sys.argv[1], "r") as csvfile:
+        reader = csv.reader(csvfile)
+        for line in reader:
+
 
     return
 
