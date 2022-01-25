@@ -30,7 +30,7 @@ def main():
     # TODO: Find longest match of each STR in DNA sequence
     max_count = []
     for i in range (len(STR_list[0])):
-        max_count.append(longest_match(sequence, STR_list[0][i]))
+        max_count.append(longest_match(sequence, STR_list))
 
 
     # TODO: Check database for matching profiles
