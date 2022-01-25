@@ -28,9 +28,9 @@ def main():
         # This returns the contents of the file as a string.
 
     # TODO: Find longest match of each STR in DNA sequence
-    STR_seq_count = []
+    max_count = []
     for i in range (len(STR_list[0])):
-        STR_seq_count.append(longest_match())
+        max_count.append(longest_match(sequence, STR_list[0][i]))
 
 
 
