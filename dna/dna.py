@@ -12,7 +12,10 @@ def main():
     with open(sys.argv[1], "r") as csvfile:
         reader = csv.DictReader(csvfile)
         # database is in a table format
-        for line in reader
+        for line in reader:
+            # search for every STR
+            
+
 
 
     # TODO: Read DNA sequence file into a variable
