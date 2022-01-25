@@ -52,6 +52,10 @@ def compute_max(sequence, subsequence[0][i]):
     for i in range(len(sequence) - len(subsequence) + 2):
         if (subsequence == sequence[i: i + len(subsequence)]):
             list[i] = list[i - len(subsequence)] - 1
+    most_cnsqtv_STR = max(list)
+    return most_cnsqtv_STR
+
+main()
 
 
 
