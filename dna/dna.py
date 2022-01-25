@@ -9,7 +9,7 @@ def main():
         sys.exit("Usage: python dna.py data.csv sequence.txt")
 
     # TODO: Read database file into a variable
-    STR_list = []
+    subsequence = []
     with open(sys.argv[1], "r") as csvfile:
         reader = csv.DictReader(csvfile)
         # database is in a table format
