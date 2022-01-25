@@ -12,9 +12,8 @@ def main():
     subsequence = []
     with open(sys.argv[1], "r") as csvfile:
         reader = csv.reader(csvfile)
-        for i in range(1, len(reader.fieldnames)):
-            row = reader.fieldnames[i]
-            subsequence.append(row)
+        for line in reader:
+            subsequence.append(line[1:])
         # search for every STR)
         #print(subsequence)
 
