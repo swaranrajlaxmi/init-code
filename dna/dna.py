@@ -17,6 +17,7 @@ def main():
             # search for every STR
             STR_list.append(line[1:])
         print(STR_list)
+            break
 
 
 
