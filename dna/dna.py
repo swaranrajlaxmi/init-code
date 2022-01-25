@@ -15,7 +15,7 @@ def main():
         # database is in a table format
         for line in reader:
             # search for every STR
-            STR_list.append(line[1:])
+            STR_list.append(line[0:])
         print(STR_list)
 
 
