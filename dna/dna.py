@@ -30,7 +30,7 @@ def main():
         # Loop over every STR from the database
         for STR in STRs:
             # Update the Sequence STR dictionary with max amount of repeats
-            seq_str_count[STR] = find_repeats(sequence, STR)
+            seq_str_count[STR] = longest_match(sequence, STR)
 
     # Check if any person has same amount of STR repeats as sequence
     for profile in profiles:
