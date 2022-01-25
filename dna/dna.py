@@ -9,13 +9,14 @@ def main():
         sys.exit("Usage: python dna.py data.csv sequence.txt")
 
     # TODO: Read database file into a variable
-    with open(argv[1], "r") as csvfile:
+    with open(sys.argv[1], "r") as csvfile:
         reader = csv.DictReader(csvfile)
         # database is in a table format
 
 
     # TODO: Read DNA sequence file into a variable
-    with open(argv[2], "r") as file:
+    sequencestring = ''
+    with open(sys.argv[2], "r") as file:
         sequence = csv.reader(file)
         for i in sequence:
             sequencestring = sequencestring.join(i)
