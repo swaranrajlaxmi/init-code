@@ -31,7 +31,7 @@ def main():
     max_count = []
     for i in range (len(subsequence[0])):
         max_count.append(longest_match(sequence, subsequence[0][i]))
-    print(max_count)
+        print(max_count)
 
 
     # TODO: Check database for matching profiles
@@ -48,6 +48,7 @@ def main():
 
 
 def longest_match(sequence, subsequence):
+    print(subsequence)
     """Returns length of longest run of subsequence in sequence."""
 
     # Initialize variables
