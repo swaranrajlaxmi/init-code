@@ -22,7 +22,7 @@ def main():
     # TODO: Read DNA sequence file into a variable
     with open(sys.argv[2], "r") as file:
         sequence = file.read()
-        print(sequence)
+        #print(sequence)
         # read using the read() method on the file object.
         # This returns the contents of the file as a string.
 
@@ -38,8 +38,6 @@ def main():
         for line in reader:
             if (max_count == line[1:]):
                 print(f"{line[0]} is the match")
-
-
     return
 
 
