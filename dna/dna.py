@@ -49,7 +49,9 @@ def main():
 def compute_max(sequence, subsequence[0][i]):
     # make a list with the same length as the txt seq file
     list = [0] * len(sequence)
-    for i in range
+    for i in range(len(sequence) - len(subsequence) + 2):
+        if (subsequence == sequence(i: i + len(subsequence))):
+            
 
 
 def longest_match(sequence, subsequence):
