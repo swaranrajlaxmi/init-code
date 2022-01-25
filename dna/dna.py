@@ -12,7 +12,7 @@ def main():
     profiles = []
 
     # Read in database file - using `with` means we don't have to close the file
-    with open(argv[1], mode="r") as database:
+    with open(sys.argv[1], "r") as database:
         reader = csv.DictReader(database)
         # Populate list of Short Tandem Repeats (STRs)
         STRs = reader.fieldnames[1:]
@@ -24,7 +24,7 @@ def main():
     seq_str_count = dict.fromkeys(STRs, 0)
 
     # Read in sequence file
-    with open(argv[2], mode="r") as sequence_file:
+    with open(sys.argv[2], "r") as sequence_file:
         # Grab first line of txt file
         sequence = sequence_file.readline()
         # Loop over every STR from the database
