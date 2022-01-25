@@ -30,13 +30,13 @@ def main():
     # TODO: Find longest match of each STR in DNA sequence
     max_count = []
     for i in range (len(subsequence[0])):
-        max_count.append(longest_match(sequence, subsequence))
+        max_count.append(longest_match(sequence, subsequence[0][i]))
 
 
     # TODO: Check database for matching profiles
     with open(sys.argv[1], "r") as csvfile:
-        reader = csv.reader(csvfile)
-        for line in reader:
+        second_reader = csv.reader(csvfile)
+        for line in second_reader:
             if (max_count == line[1:]):
                 (print(f"{line[0]} is the match"))
         #print("No match")
