@@ -13,7 +13,7 @@ def main():
     with open(sys.argv[1], "r") as csvfile:
         reader = csv.DictReader(csvfile)
         # database is in a table format
-        for line in reader:
+        for i in range(1, len(reader.fieldnames)):
             # search for every STR
             STR_list = reader.append(line[1:])
         print(STR_list)
