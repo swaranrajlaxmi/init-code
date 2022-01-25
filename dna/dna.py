@@ -11,9 +11,9 @@ def main():
     # TODO: Read database file into a variable
     STR_list = []
     with open(sys.argv[1], "r") as csvfile:
-        reader = reader(csvfile)
+        reader = csv.reader(csvfile)
         # database is in a table format
-        for i in range(1, len(reader.fieldnames)):
+        for line in reader:
             # search for every STR
             STR_list = reader.fieldnames[i]
         print(STR_list)
