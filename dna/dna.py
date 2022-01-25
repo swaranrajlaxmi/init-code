@@ -30,7 +30,7 @@ def main():
     # TODO: Find longest match of each STR in DNA sequence
     max_count = []
     for i in range (len(subsequence[0])):
-        max_count.append(longest_match(sequence, subsequence[0][i]))
+        max_count.append(compute_max(sequence, subsequence[0][i]))
         print(max_count)
 
 
@@ -45,6 +45,9 @@ def main():
                 print("No match")
 
     return
+
+def compute_max(sequence, subsequence[0][i]):
+    
 
 
 def longest_match(sequence, subsequence):
