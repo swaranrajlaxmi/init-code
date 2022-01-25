@@ -34,8 +34,8 @@ def main():
 
 
     # TODO: Check database for matching profiles
-    with open(sys.argv[1], "r") as csvfile:
-        second_reader = csv.reader(csvfile)
+    with open(sys.argv[1], "r") as csvfile1:
+        second_reader = csv.reader(csvfile1)
         for line in second_reader:
             if (max_count == line[1:]):
                 (print(f"{line[0]} is the match"))
