@@ -8,59 +8,47 @@ def main():
     if len(sys.argv) != 3:
         sys.exit("Usage: python dna.py data.csv sequence.txt")
 
-    # TODO: Read database file into a variable
-    subsequence = []
-    with open(sys.argv[1], "r") as csvfile:
-        reader = csv.reader(csvfile)
-        for line in reader:
-            subsequence.append(line[1:])
-        # print(subsequence)
+    STRs = []
+    profiles = []
 
+    # Read in database file - using `with` means we don't have to close the file
+    with open(argv[1], mode="r") as database:
+        reader = csv.DictReader(database)
+        # Populate list of Short Tandem Repeats (STRs)
+        STRs = reader.fieldnames[1:]
+        for row in reader:
+            # Add person to profiles
+            profiles.append(row)
 
-    # TODO: Read DNA sequence file into a variable
-    sequence = ''
-    with open(sys.argv[2], "r") as file:
-        sequence_list = file.read()
-        for i in sequence_list:
-            sequence = sequence.join(i)
-       # print(sequence)
-        # read using the read() method on the file object.
-        # This returns the contents of the file as a string.
+    # Initialise dictionary for sequence file
+    seq_str_count = dict.fromkeys(STRs, 0)
 
-    # TODO: Find longest match of each STR in DNA sequence
-    max_count = []
-    for i in range (len(subsequence[0])):
-        max_count.append(compute_max(sequence, subsequence[0][i]))
-    print(max_count)
+    # Read in sequence file
+    with open(argv[2], mode="r") as sequence_file:
+        # Grab first line of txt file
+        sequence = sequence_file.readline()
+        # Loop over every STR from the database
+        for STR in STRs:
+            # Update the Sequence STR dictionary with max amount of repeats
+            seq_str_count[STR] = find_repeats(sequence, STR)
 
+    # Check if any person has same amount of STR repeats as sequence
+    for profile in profiles:
+        match_count = 0
 
-    # TODO: Check database for matching profiles
-    with open(sys.argv[1], "r") as csvfile1:
-        second_reader = csv.reader(csvfile1)
-        for line in second_reader:
-            print(line[1:])
-            if (max_count == line[1:]):
-                (print(f"{line[0]} is the match"))
-            else:
-                print("No match")
+        for STR in STRs:
+            if int(profile[STR]) != seq_str_count[STR]:
+                continue
+            match_count += 1
 
-    return
+        if match_count == len(STRs):
+            print(profile['name'])
+            exit(0)
 
-def compute_max(sequence, subsequence):
-    # make a list with the same length as the txt seq file
-    list = [0] * len(sequence)
-    for i in range(len(sequence) - len(subsequence) + 2):
-        if (subsequence == sequence[i: i + len(subsequence)]):
-            list[i] = list[i - len(subsequence)] - 1
-    most_cnsqtv_STR = max(list)
-    return most_cnsqtv_STR
+    print("No match")
+    exit(1)
 
-main()
-
-
-
-"""def longest_match(sequence, subsequence):
-    print(subsequence)
+def longest_match(sequence, subsequence):
     # Returns length of longest run of subsequence in sequence.
 
     # Initialize variables
@@ -98,4 +86,4 @@ main()
     return longest_run
 
 
-main()"""
+main()
