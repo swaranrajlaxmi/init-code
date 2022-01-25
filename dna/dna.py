@@ -11,11 +11,11 @@ def main():
     # TODO: Read database file into a variable
     STR_list = []
     with open(sys.argv[1], "r") as csvfile:
-        reader = csv.reader(csvfile)
+        reader = csv.DictReader(csvfile)
         # database is in a table format
-        for line in reader:
-            # search for every STR
-            STR_list.append(line[1])
+        for i in range(1, len(reader.fieldnames)):
+            STR_list = reader.fieldnames[i]
+        # search for every STR)
         print(STR_list)
 
 
