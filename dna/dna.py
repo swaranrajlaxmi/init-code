@@ -15,7 +15,7 @@ def main():
         for line in reader:
             subsequence.append(line[1:])
             print(subsequence)
-            
+
 
     # TODO: Read DNA sequence file into a variable
     sequence = ''
@@ -23,7 +23,7 @@ def main():
         sequence_list = file.read()
         for i in sequence_list:
             sequence = sequence.join(i)
-        print(sequence)
+       # print(sequence)
         # read using the read() method on the file object.
         # This returns the contents of the file as a string.
 
