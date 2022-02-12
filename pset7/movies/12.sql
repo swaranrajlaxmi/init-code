@@ -3,3 +3,4 @@ JOIN stars ON stars.movie_id = movies.id JOIN people ON people.id = stars.person
 WHERE people.name = "Johnny Depp" AND people.name = "Helena Bonham Carter";
 
 
+SELECT movie_id FROM stars WHERE 
