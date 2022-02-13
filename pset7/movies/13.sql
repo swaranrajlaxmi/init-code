@@ -1,0 +1,1 @@
+SELECT movie_id FROM stars WHERE (SELECT id FROM people WHERE name like "Kevin Bacon" AND birth = 1958);
