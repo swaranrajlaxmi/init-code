@@ -9,4 +9,5 @@ WHERE people.name = "Johnny Depp" AND title IN
 SELECT title FROM movies, stars, people
 WHERE stars.movie_id = movies.id
 AND people.id = stars.person_id
-AND people.name LIKE "Helena Bonham Carter";
+AND people.name LIKE "Helena Bonham Carter"
+AND people.name LIKE "Johnny Depp";
