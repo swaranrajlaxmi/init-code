@@ -7,4 +7,4 @@ WHERE license_plate IN
 AND id IN (SELECT person_id FROM bank_accounts WHERE account_number IN (SELECT account_number FROM atm_transactions
 WHERE transaction_type LIKE "withdraw" AND month = 7 AND day = 28 AND atm_location LIKE "Leggett Street"))
 AND phone_number IN (SELECT caller FROM phone_calls WHERE month = 7 AND day = 28 AND duration < 60);
-AND passport_number IN (SELECT passport_number)
+AND passport_number IN (SELECT passport_number FROM passengers WHERE flight_id IN )
