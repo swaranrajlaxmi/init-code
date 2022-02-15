@@ -12,9 +12,9 @@ AND phone_number IN (SELECT caller FROM phone_calls WHERE month = 7 AND day = 28
 AND passport_number IN (SELECT passport_number FROM passengers WHERE flight_id IN (SELECT id FROM flights WHERE month = 7 AND day = 29 ORDER BY hour, minute ASC LIMIT 1));
 
 
--- 
+-- get the name of city where the theif escaped to..
 SELECT city FROM airports WHERE id IN (SELECT destination_airport_id FROM flights WHERE id IN (SELECT flight_id FROM passengers
 WHERE passport_number IN (SELECT passport_number FROM people WHERE name LIKE 'Bruce')));
-
+-- get the name of person who helped the theif
 SELECT name FROM people WHERE phone_number IN (SELECT receiver FROM phone_calls WHERE caller IN
 (SELECT phone_number FROM people WHERE name like "Bruce") AND month = 7 AND day = 28 AND duration < 60);
