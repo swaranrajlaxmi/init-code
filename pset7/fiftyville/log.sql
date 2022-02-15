@@ -1,5 +1,5 @@
 -- Keep a log of any SQL queries you execute as you solve the mystery.
--- getting name of thief
+-- get the name of thief
 SELECT name FROM people
 WHERE license_plate IN
 -- get the license_plate of car within 10 min duration
