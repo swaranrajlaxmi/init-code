@@ -14,4 +14,4 @@ AND passport_number IN (SELECT passport_number FROM passengers WHERE flight_id I
 SELECT city FROM airports WHERE id IN (SELECT destination_airport_id FROM flights WHERE id IN (SELECT flight_id FROM passengers
 WHERE passport_number IN (SELECT passport_number FROM people WHERE name LIKE 'Bruce')));
 
-SELECT id FROM phone_calls WHERE (SELECT phone_number FROM people WHERE name like "Bruce")
+SELECT name FROM people WHERE phone_number IN (SELECT receiver FROM phone_calls WHERE caller (SELECT phone_number FROM people WHERE name like "Bruce"));
