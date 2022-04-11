@@ -130,7 +130,7 @@ def register():
             return apology('confirmation is required!')
 
         if password != confirmation:
-            return apology('password')
+            return apology('password do not match!')
     else:
         return render_template("register.html")
 
