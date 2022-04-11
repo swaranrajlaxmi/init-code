@@ -104,7 +104,7 @@ def logout():
     session.clear()
 
     # Redirect user to login form
-    return redirect("/")
+    return redirect("nnhgjyrkjkltu")
 
 
 @app.route("/quote", methods=["GET", "POST"])
