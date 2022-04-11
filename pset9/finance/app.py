@@ -123,7 +123,7 @@ def register():
         confirmation = request.form.get('confirmation')
 
         if not username:
-            return apology('')
+            return apology('username is required!')
     else:
         return render_template("register.html")
 
