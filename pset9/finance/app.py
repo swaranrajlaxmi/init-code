@@ -128,6 +128,9 @@ def register():
             return apology('password is required!')
         elif not confirmation:
             return apology('confirmation is required!')
+
+        if password != confirmation:
+            return apology('password')
     else:
         return render_template("register.html")
 
