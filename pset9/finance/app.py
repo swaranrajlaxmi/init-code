@@ -123,21 +123,21 @@ def register():
         confirmation = request.form.get('confirmation')
 
         if not username:
-            return apology('username is required!')
+            return apology("username is required!", 403)
         elif not password:
-            return apology('password is required!')
+            return apology("password is required!", 403)
         elif not confirmation:
-            return apology('confirmation is required!')
+            return apology("confirmation is required!", 403)
 
         if password != confirmation:
-            return apology('password do not match!')
+            return apology("password do not match!", 403)
 
         hash = generate_password_hash(password)
         try:
             db.execute("INSERT INTO users (username, hash) VALUES (?, ?)", username, hash)
-            return redirect('/')
+            return redirect("/")
         except:
-            return apology('Username already exists')
+            return apology("Username already exists", 403)
     else:
         return render_template("register.html")
 
