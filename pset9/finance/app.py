@@ -116,6 +116,8 @@ def quote():
 
         if not symbol:
             return apology("Please enter a symbol!")
+
+            
     else:
         return render_template("quote.html")
 
