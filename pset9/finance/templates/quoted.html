@@ -1,4 +1,11 @@
 
+{% block title %}
+    Quoted
+{% endblock %}
+
+{% block main %}
+    <p>A share of {{ stock.name }} costs {{ usd(stock.price) }}.</p>
+{% endblock %}
 <!-- {% block title %}
     Quoted
 {% endblock %}
@@ -21,11 +28,3 @@
         </tbody>
     </table>
 {% endblock %} //-->
-
-{% block title %}
-    Quoted
-{% endblock %}
-
-{% block main %}
-    A share of {{ stock.name }} costs {{ usd(stock.price) }}.
-{% endblock %}
