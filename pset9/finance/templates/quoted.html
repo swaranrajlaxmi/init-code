@@ -1,11 +1,13 @@
-
-<!-- {% block title %}
+{% extends "layout.html" %}
+{% block title %}
     Quoted
 {% endblock %}
 
 {% block main %}
     <p>A share of {{ stock.name }} costs {{ usd(stock.price) }}.</p>
 {% endblock %}//-->
+
+<!-- {% extends "layout.html" %}
 {% block title %}
     Quoted
 {% endblock %}
@@ -28,3 +30,4 @@
         </tbody>
     </table>
 {% endblock %}
+//-->
