@@ -1,5 +1,5 @@
 
-{% block title %}
+<!-- {% block title %}
     Quoted
 {% endblock %}
 
@@ -20,4 +20,17 @@
             </tr>
         </tbody>
     </table>
+{% endblock %} //-->
+
+{% block title %}
+    Quoted
+{% endblock %}
+
+{% block main %}
+    <form action="/quote" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="symbol" placeholder="Stock Symbol" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Quote</button>
+    </form>
 {% endblock %}
