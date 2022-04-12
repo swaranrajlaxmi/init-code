@@ -135,7 +135,7 @@ def register():
         hash = generate_password_hash(password)
         try:
             db.execute("INSERT INTO users (username, hash) VALUES (?, ?)", username, hash)
-            return redirect("/")
+            return redirect("/login")
         except:
             return apology("Username already exists", 403)
     else:
