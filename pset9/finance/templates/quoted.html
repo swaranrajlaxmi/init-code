@@ -4,6 +4,6 @@
 {% endblock %}
 
 {% block main %}
-    <p>A share of {{ stock.name }} costs {{ usd(stock.price) }}.</p>
+    <p>A share of {{ stock.name }} {{ (stock.symbol) }} costs {{ usd(stock.price) }}.</p>
 {% endblock %}
 
