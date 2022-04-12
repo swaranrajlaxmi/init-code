@@ -121,6 +121,7 @@ def quote():
 
         if not stock:
             return apology("Please enter a valid symbol")
+        return render_template("quoted.html")
     else:
         return render_template("quote.html")
 
