@@ -4,5 +4,24 @@
 {% endblock %}
 
 {% block main %}
-    <p>A share of {{stock.name}} costs {{stock.price}}.</p>
+    <table id="tablePreview" class="table table-striped table-sm">
+    <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Company Name</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <!--Table head-->
+  <!--Table body-->
+  <tbody>
+    <tr>
+      <td>{{ stock['symbol'] }}</td>
+      <td>{{ stock['name'] }}</td>
+      <td>{{ stock['price'] | usd }}</td>
+
+    </tr>
+  </tbody>
+  <!--Table body-->
+</table>
 {% endblock %}
