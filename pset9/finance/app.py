@@ -77,6 +77,7 @@ def buy():
            return apology("Insufficient fund!")
         else:
             db.execute("UPDATE users SET cash = ? WHERE id = ?", cash - total, user_id)
+            db.execute("INSERT INTO transactions (user_id, stock_name, price, shares, bought_or_sold, symbol) VALUE")
 
         return redirect("/")
 
