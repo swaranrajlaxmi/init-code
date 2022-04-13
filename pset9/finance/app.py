@@ -75,7 +75,8 @@ def buy():
 
        if cash < total:
            return apology("Insufficient fund!")
-           
+
+        
 
         return redirect("/")
 
