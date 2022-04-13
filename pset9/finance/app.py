@@ -57,7 +57,8 @@ def buy():
             return apology("Please enter a symbol!")
         elif not stock:
             return apology("Please enter a valid symbol")
-            
+
+        if 
 
 
     else:
