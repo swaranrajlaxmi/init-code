@@ -62,6 +62,8 @@ def buy():
             shares = int(request.form.get("shares"))
         except:
             return apology("shares must be an integer!")
+        if shares <= 0:
+            return apology("shares must be in positive integer")
 
     else:
         return render_template("buy.html")
