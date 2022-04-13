@@ -50,8 +50,10 @@ def index():
 @login_required
 def buy():
     if request.method == "POST":
-        symbol = request.form.get("symbol")
+        symbol = request.form.get("symbol").upper()
         stock = lookup(symbol)
+
+        if not symbol:
     else:
         return render_template("buy.html")
 
