@@ -58,8 +58,10 @@ def buy():
         elif not stock:
             return apology("Please enter a valid symbol")
 
-        if 
-
+        try:
+            shares = int(request.form.get("shares"))
+        except:
+            return apology("shares must be an integer!")
 
     else:
         return render_template("buy.html")
