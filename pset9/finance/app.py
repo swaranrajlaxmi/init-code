@@ -69,7 +69,9 @@ def buy():
         cash = db.execute("SELECT cash FROM users WHERE id = ?", user_id)[0]["cash"]
         print(f'\n\n{cash}\n\n')
 
-       stock_name = stock["name"]
+       name = stock["name"]
+       price = stock["price"]
+       total = price * shares
 
         return redirect("/")
 
