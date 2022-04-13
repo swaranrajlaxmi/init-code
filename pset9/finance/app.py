@@ -54,6 +54,12 @@ def buy():
         stock = lookup(symbol)
 
         if not symbol:
+            return apology("Please enter a symbol!")
+        elif not stock:
+            return apology("Please enter a valid symbol")
+            
+
+
     else:
         return render_template("buy.html")
 
