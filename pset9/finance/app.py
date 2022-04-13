@@ -73,6 +73,10 @@ def buy():
        price = stock["price"]
        total = price * shares
 
+       if cash < total:
+           return apology("Insufficient fund!")
+           
+
         return redirect("/")
 
     else:
