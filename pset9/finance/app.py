@@ -75,8 +75,8 @@ def buy():
 
        if cash < total:
            return apology("Insufficient fund!")
-
-        
+        else:
+            db.execute("UPDATE users SET cash = ? WHERE id = ?", cash - total, user_id)
 
         return redirect("/")
 
