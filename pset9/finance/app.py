@@ -205,11 +205,11 @@ def sell():
             return apology("shares must be in positive number")
         shares_owned = db.execute("SELECT shares FROM transactions WHERE user_id = ? AND symbol = ? GROUP BY symbol")[0]["shares"]
 
-        if shares_owned < shares:
+        if shares_owned < sell_shares:
             return apology("You don't have enough shares!")
 
-        name = lookup(symbol)["name"]
-        price = lookup(symbol)["price"]
+        stock_name = lookup(symbol)["name"]
+        current_price = lookup(symbol)["price"]
 
 
     else:
