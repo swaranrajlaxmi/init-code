@@ -46,12 +46,9 @@ def index():
     stocks = db.execute("SELECT symbol, price, stock_name, SUM(shares) as totalShares FROM transactions WHERE user_id = ? GROUP BY symbol", user_id)
     cash = db.execute("SELECT cash FROM users WHERE id = ?", user_id)[0]["cash"]
 
-    grand_total = 0
+    grand_total = cash
     for stock in stocks:
-        stock["total"] = (stock["price"] * stock["totalShares"])
-        grand_total += stock["total"]
-
-    grand_total += cash
+        grand_total += (stock["price"] * stock["totalShares"])
 
     return render_template("index.html", stocks=stocks, cash=cash, grand_total=grand_total, usd=usd)
 
