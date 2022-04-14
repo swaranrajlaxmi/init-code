@@ -203,7 +203,7 @@ def sell():
 
         if shares <= 0:
             return apology("shares must be in positive number")
-        shares_owned = db.execute()
+        shares_owned = db.execute("SELECT shares FROM transactions WHERE user_id = ? ")
 
     else:
         user_id = session["user_id"]
