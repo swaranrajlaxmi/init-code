@@ -75,9 +75,9 @@ def buy():
         cash = db.execute("SELECT cash FROM users WHERE id = ?", user_id)[0]["cash"]
         print(f'\n\n{cash}\n\n')
 
-       name = stock["name"]
-       price = stock["price"]
-       total = price * shares
+        name = stock["name"]
+        price = stock["price"]
+        total = price * shares
 
        if cash < total:
            return apology("Insufficient fund!")
