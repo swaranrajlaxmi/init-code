@@ -212,7 +212,7 @@ def sell():
         price = lookup(symbol)["price"]
 
         cash = db.execute("SELECT cash FROM users WHERE id = ?", user_id)[0]["cash"]
-        
+        db.execute("INSERT")
 
 
     else:
