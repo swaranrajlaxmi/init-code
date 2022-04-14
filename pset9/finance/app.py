@@ -199,17 +199,17 @@ def sell():
     if request.method == "POST":
         user_id = session["user_id"]
         symbol = request.form.get("symbol")
-        sell_shares = int(request.form.get("shares"))
+        shares = int(request.form.get("shares"))
 
         if shares <= 0:
             return apology("shares must be in positive number")
         shares_owned = db.execute("SELECT shares FROM transactions WHERE user_id = ? AND symbol = ? GROUP BY symbol")[0]["shares"]
 
-        if shares_owned < sell_shares:
+        if shares_owned < shares:
             return apology("You don't have enough shares!")
 
-        stock_name = lookup(symbol)["name"]
-        current_price = lookup(symbol)["price"]
+        name = lookup(symbol)["name"]
+        price = lookup(symbol)["price"]
 
 
     else:
