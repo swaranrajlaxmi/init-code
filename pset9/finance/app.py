@@ -43,7 +43,7 @@ def after_request(response):
 @login_required
 def index():
     user_id = session["user_id"]
-    stocks = db.execute("SELECT symbol, price, stock_name, SUM(shares) as totalshares")
+    stocks = db.execute("SELECT symbol, price, stock_name, SUM(shares) FROM transactions WHERE user_id = ?", user_id)
 
 
 @app.route("/buy", methods=["GET", "POST"])
