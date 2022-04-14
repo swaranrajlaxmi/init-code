@@ -213,7 +213,8 @@ def sell():
         earned_cash = price * shares
 
         cash = db.execute("SELECT cash FROM users WHERE id = ?", user_id)[0]["cash"]
-        db.execute("INSERT")
+        db.execute("UPDATE users SET cash = ? WHERE id = ?", earned_cash + cash, user_id )
+        db.execute("INSERT INTO transactions (user_id,)")
 
 
     else:
