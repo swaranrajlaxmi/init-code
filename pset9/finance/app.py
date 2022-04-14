@@ -197,7 +197,8 @@ def register():
 def sell():
     """Sell shares of stock"""
     if request.method == "POST":
-        
+
     else:
+        user_id = session["user_id"]
         symbols = db.execute("SELECT symbol FROM transactions WHERE user_id = ? GROUP BY symbol", user_id)
         return render_template("sell.html", symbols=symbols)
