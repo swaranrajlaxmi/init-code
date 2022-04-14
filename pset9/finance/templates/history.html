@@ -18,10 +18,9 @@
             {% for transaction in transactions %}
             <tr>
                 <td>{{ transaction["symbol"].upper() }}</td>
-                <td>{{ transaction["stock_name"] }}</td>
-                <td>{{ usd(transaction["shares"]) }}</td>
+                <td>{{ transaction["shares"] }}</td>
                 <td>{{ usd(stock["price"]) }}</td>
-                <td>{{ usd(stock["totalShares"] * stock["price"]) }}</td>
+                <td>{{ transaction["time"] }}</td>
             </tr>
             {% endfor %}
         </tbody>

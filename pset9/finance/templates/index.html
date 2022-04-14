@@ -20,7 +20,7 @@
             <tr>
                 <td>{{ stock["symbol"] }}</td>
                 <td>{{ stock["stock_name"] }}</td>
-                <td>{{ usd(stock["totalShares"]) }}</td>
+                <td>{{ stock["totalShares"] }}</td>
                 <td>{{ usd(stock["price"]) }}</td>
                 <td>{{ usd(stock["totalShares"] * stock["price"]) }}</td>
             </tr>
