@@ -53,7 +53,7 @@ def index():
 
     grand_total += cash
 
-    return render_template("index.html", stocks=stocks, cash=cash, total=total, usd=usd)
+    return render_template("index.html", stocks=stocks, cash=cash, grand_total=total, usd=usd)
 
 @app.route("/buy", methods=["GET", "POST"])
 @login_required
