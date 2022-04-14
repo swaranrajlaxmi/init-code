@@ -213,7 +213,7 @@ def sell():
         earned_cash = price * shares
 
         cash = db.execute("SELECT cash FROM users WHERE id = ?", user_id)[0]["cash"]
-        db.execute("UPDATE users SET cash = ? WHERE id = ?", earned_cash + cash, user_id )
+        db.execute("UPDATE users SET cash = ? WHERE id = ?", earned_cash + cash, user_id)
         db.execute("INSERT INTO transactions (user_id, stock_name, shares, price, bought_or_sold, symbol) VALUES (?, ?, ?, ?, ?, ?)",
                     user_id, name, -shares, price, 'sell', symbol)
         return redirect("/")
