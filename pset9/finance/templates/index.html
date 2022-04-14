@@ -24,15 +24,19 @@
             <td>{{ usd(stock["price"]) }}</td>
             <td>{{ usd(stock["totalShares"] * stock["price"]) }}</td>
         </tr>
-        <tr>
-            <td colspan="3"></td>
-            <td>Cash</td>
-            <td>{{ usd(cash)}}</td>
-        </tr>
         {% end for %}
     </tbody>
     <tfoot>
-        
+        <tr>
+            <td colspan="3"></td>
+            <td><strong>Cash</strong></td>
+            <td>{{ usd(cash)}}</td>
+        </tr>
+        <tr>
+            <td colspan="3"></td>
+            <td><strong>TOTAL</strong></td>
+            <td>{{ usd(grand_total)}}</td>
+        </tr>
     </tfoot>
 </table>
 
