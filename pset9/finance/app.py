@@ -42,8 +42,8 @@ def after_request(response):
 @app.route("/")
 @login_required
 def index():
-    """Show portfolio of stocks"""
-    return apology("TODO")
+    user_id = session["user_id"]
+    stocks = db.execute("SELECT symbol, price, stock_name, SUM(shares) as totalshares")
 
 
 @app.route("/buy", methods=["GET", "POST"])
