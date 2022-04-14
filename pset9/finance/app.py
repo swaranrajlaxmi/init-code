@@ -96,7 +96,7 @@ def buy():
 def history():
     """Show history of transactions"""
     user_id = session["user_id"]
-    transactions = db.execute("SELECT price, shares, symbol, time FROM transactions WHERE user_id = ?", user_id)
+    transactions = db.execute("SELECT price, shares, bought_or_sold, symbol, time FROM transactions WHERE user_id = ?", user_id)
     return render_template("history.html", transactions=transactions, usd=usd)
 
 
