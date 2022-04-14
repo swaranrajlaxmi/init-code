@@ -202,7 +202,7 @@ def sell():
         user_id = session["user_id"]
         symbol = request.form.get("symbol")
         if not symbol:
-            return apology("")
+            return apology("please select a ")
         shares = int(request.form.get("shares"))
 
         if shares <= 0:
