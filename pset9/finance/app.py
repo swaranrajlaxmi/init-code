@@ -210,7 +210,7 @@ def sell():
 
         name = lookup(symbol)["name"]
         price = lookup(symbol)["price"]
-        
+        earned_cash = price * shares
 
         cash = db.execute("SELECT cash FROM users WHERE id = ?", user_id)[0]["cash"]
         db.execute("INSERT")
