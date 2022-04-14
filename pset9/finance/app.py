@@ -199,7 +199,7 @@ def sell():
     if request.method == "POST":
         user_id = session["user_id"]
         symbol = request.form.get("symbol")
-        shares = int(request.form.get("shares"))
+        sell_shares = int(request.form.get("shares"))
 
         if shares <= 0:
             return apology("shares must be in positive number")
@@ -210,7 +210,7 @@ def sell():
 
         name = lookup(symbol)["name"]
         price = lookup(symbol)["price"]
-        
+
 
     else:
         user_id = session["user_id"]
