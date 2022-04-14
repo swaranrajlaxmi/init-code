@@ -47,7 +47,7 @@ def index():
     cash = db.execute("SELECT cash FROM users WHERE id = ?", user_id)[0]["cash"]
 
     for stock in stocks:
-    total = cash + (stock["price"] * stock["totalShares"])
+        total = cash + (stock["price"] * stock["totalShares"])
 
     return render_template("index.html", stocks=stocks, cash=cash, total=total, usd=usd)
 
