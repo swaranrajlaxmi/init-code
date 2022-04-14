@@ -51,7 +51,7 @@ def index():
         stock["total"] = (stock["price"] * stock["totalShares"])
         grand_total += stock["total"]
 
-    
+    grand_total += cash
 
     return render_template("index.html", stocks=stocks, cash=cash, total=total, usd=usd)
 
