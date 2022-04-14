@@ -69,7 +69,7 @@ def buy():
         except:
             return apology("shares must be an integer!")
         if shares <= 0:
-            return apology("shares must be in positive integer")
+            return apology("shares must be in positive number")
 
         user_id = session["user_id"]
         cash = db.execute("SELECT cash FROM users WHERE id = ?", user_id)[0]["cash"]
@@ -197,7 +197,13 @@ def register():
 def sell():
     """Sell shares of stock"""
     if request.method == "POST":
-        pass
+        user_id = session["user_id"]
+        symbol = request.form.get("symbol")
+        shares = int(request.form.get("shares"))
+
+        if shares <= 0:
+            return apology("shares must be in positive number")
+
     else:
         user_id = session["user_id"]
         symbols = db.execute("SELECT symbol FROM transactions WHERE user_id = ? GROUP BY symbol", user_id)
