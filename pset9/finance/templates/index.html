@@ -25,7 +25,9 @@
             <td>{{ usd(stock["totalShares"] * stock["price"]) }}</td>
         </tr>
         <tr>
-            <td></td>
+            <td colspan="3"></td>
+            <td>Cash</td>
+            <td>{{ usd()}}</td>
         </tr>
         {% end for %}
     </tbody>
