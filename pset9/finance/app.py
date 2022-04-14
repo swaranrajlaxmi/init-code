@@ -43,8 +43,9 @@ def after_request(response):
 @login_required
 def index():
     user_id = session["user_id"]
-    stocks = db.execute("SELECT symbol, price, stock_name, SUM(shares) FROM transactions WHERE user_id = ?", user_id)
-
+    stocks = db.execute("SELECT symbol, price, stock_name, SUM(shares) FROM transactions WHERE user_id = ? GROUP BY symbol", user_id)
+    cash = db.execute("SELECT cash FROM users WHERE id = ?", user_id)[0]["cash"]
+    
 
 @app.route("/buy", methods=["GET", "POST"])
 @login_required
