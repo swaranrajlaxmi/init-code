@@ -189,7 +189,7 @@ def register():
             db.execute("INSERT INTO users (username, hash) VALUES (?, ?)", username, hash)
             return redirect("/login")
         except:
-            return apology("Username already exists", 403)
+            return apology("Username already exists", 404)
     else:
         return render_template("register.html")
 
