@@ -1,8 +1,9 @@
 {
     "editor.quickSuggestions": {
-    
+
         "other": "on",
         "comments": "off",
         "strings": "off"
-    }
+    },
+    "livePreview.defaultPreviewPath": "/project0/search/index.html"
 }
