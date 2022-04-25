@@ -42,9 +42,9 @@ li{
  }
 
  .searchbar{
-     height: ;
+     height: 45px;
      border: none;
      width: 500px ;
-     outline: ;
-     font-size: ;
+     outline: none;
+     font-size: 16px;
  }
