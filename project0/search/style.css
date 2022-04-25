@@ -79,5 +79,6 @@ li{
 }
 
 .button :focus{
-    border: 1px ;
+    border: 1px solid #c8c8c8;
+    padding: 9px 19px;
 }
