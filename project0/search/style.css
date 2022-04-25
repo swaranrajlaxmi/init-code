@@ -37,5 +37,7 @@ li{
  }
 
  .bar :focus-within{
-
+     box box-shadow: 1px #dcdcdc;
+     outline: none;
  }
+ 
