@@ -79,5 +79,5 @@ li{
 }
 
 .button :focus{
-    
+    border: 1px ;
 }
