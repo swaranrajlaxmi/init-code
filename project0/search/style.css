@@ -33,11 +33,11 @@ li{
  }
 
  .bar :hover{
-     box box-shadow: 1px #dcdcdc;
+     box box-shadow: 1px 1px 8px 1px #dcdcdc;
  }
 
  .bar :focus-within{
-     box box-shadow: 1px #dcdcdc;
+     box box-shadow: 1px 1px 1px 1px #dcdcdc;
      outline: none;
  }
 
@@ -50,5 +50,8 @@ li{
  }
 
  .icon{
-     
+    height: 20px;
+    position: relative;
+    top: 5px;
+    left: 10px;
  }
