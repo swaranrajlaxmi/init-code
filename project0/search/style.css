@@ -32,12 +32,12 @@ li{
      border:1px solid #dcdcdc ;
  }
 
- .hover{
-     box box-shadow: 1px 1px 8px 1px #dcdcdc;
+ .bar:hover{
+     box-shadow: 1px 1px 8px 1px #dcdcdc;
  }
 
- .focus-within{
-     box box-shadow: 1px 1px 8px 1px #dcdcdc;
+ .bar:focus-within{
+     box-shadow: 1px 1px 8px 1px #dcdcdc;
      outline: none;
  }
 
