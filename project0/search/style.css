@@ -38,6 +38,11 @@ li a :hover{
     text-align-last: center;
 }
 
+.adimg0{
+    width: 200px;
+    height: 75px;
+}
+
 .bar{
     margin: 0 auto ;
     width: 575px ;
