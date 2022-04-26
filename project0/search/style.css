@@ -21,7 +21,7 @@ li a :hover{
 }
 
 .logo{
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 10px;
     text-align-last: center;
 }
@@ -29,6 +29,11 @@ li a :hover{
 .img0{
     width: 400px;
     height: 300px;
+}
+
+.glogo{
+    margin-top: 200px;
+    margin-bottom: 10px;
 }
 .bar{
     margin: 0 auto ;
