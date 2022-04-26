@@ -26,6 +26,10 @@ li a :hover{
     text-align-last: center;
 }
 
+.img0{
+    width: 400px;
+    height: 250px;
+}
 .bar{
     margin: 0 auto ;
     width: 575px ;
