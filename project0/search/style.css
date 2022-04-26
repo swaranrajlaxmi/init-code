@@ -40,7 +40,7 @@ li a :hover{
 
 .adimg0{
     width: 200px;
-    height: 75px;
+    height: 90px;
 }
 
 .bar{
@@ -98,9 +98,7 @@ li a :hover{
     border: 1px solid #c8c8c8;
     padding: 9px 19px;
 }
-#adiv0{
-    background-color: #efeded;
-}
+
 #adiv1{
     margin-top: 10px;
     margin-left: 45px;
