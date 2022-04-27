@@ -116,6 +116,10 @@ li a :hover{
     margin-top: 30px;
 }
 
+.label1{
+    font-family: auto;
+}
+
 #span2{
     font-size: 100%;
     font-weight: inherit;
