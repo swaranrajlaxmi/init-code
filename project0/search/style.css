@@ -125,3 +125,7 @@ li a :hover{
     font-weight: inherit;
     font-style: inherit;
 }
+
+.adbutton{
+    text-align: right;
+}
