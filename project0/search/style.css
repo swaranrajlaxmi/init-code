@@ -4,6 +4,10 @@ ul{
     margin-right: 50px;
 }
 
+.ad_ul{
+    padding-bottom: 20px;
+}
+
 li{
     float: right;
 }
