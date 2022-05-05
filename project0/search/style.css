@@ -115,8 +115,12 @@ li a :hover{
     font-family: arial,sans-serif;
 }
 
-.input_label{
+.input_label_left{
     font-size: smaller;
+}
+
+.input_label_right{
+    font-size: small;
 }
 
 #adiv2{
