@@ -127,6 +127,9 @@ li a :hover{
     font-size: 100%;
     font-weight: inherit;
     font-style: inherit;
+    height: 30px;
+    display: table-cell;
+    vertical-align: middle;
 }
 /* Size for brand */
 nav .navbar-brand
