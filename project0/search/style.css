@@ -125,7 +125,9 @@ li a :hover{
 }
 
 .input_label_label{
-    
+    height: 30px;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .input_label_right_span{
