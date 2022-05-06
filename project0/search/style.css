@@ -140,7 +140,8 @@ li a :hover{
 }
 
 .div_row{
-    margin: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 #adiv2{
