@@ -110,9 +110,7 @@ li a :hover{
 }
 #label0{
     color: #d93025;
-    font-size: smaller;
-    text-rendering: geometricprecision;
-    font-family: arial,sans-serif;
+    font-size: 20px;
 }
 
 .input_label_left{
