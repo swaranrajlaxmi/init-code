@@ -153,13 +153,17 @@ li a :hover{
     font-family: auto;
 }
 
-#label_heading{
+#label_hdg_left{
     font-size: 100%;
     font-weight: inherit;
     font-style: inherit;
     height: 30px;
     display: table-cell;
     vertical-align: middle;
+}
+
+#label_hdg_right{
+    
 }
 
 #span3{
