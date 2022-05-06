@@ -139,6 +139,10 @@ li a :hover{
     padding: 1px 8px;
 }
 
+.div_row{
+    margin: 5px;
+}
+
 #adiv2{
     max-width: 1140px;
     min-width: 200px;
