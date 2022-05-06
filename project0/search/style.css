@@ -169,6 +169,12 @@ li a :hover{
     vertical-align: middle;;
 }
 
+#col-4_adjust{
+    flex: 0 0 auto;
+    width: 33.33333333%;
+    margin-left: -22px;
+}
+
 #span3{
     height: 30px;
     display: table-cell;
