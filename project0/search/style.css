@@ -163,6 +163,7 @@ li a :hover{
 }
 
 #span3{
+    height: 30px;
     display: table-cell;
     vertical-align: middle;
 }
