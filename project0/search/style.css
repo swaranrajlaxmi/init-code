@@ -164,6 +164,9 @@ li a :hover{
 
 #label_hdg_right{
     font-size: 13px;
+    color: #777;
+    font-weight: 700;
+    vertical-align: middle;;
 }
 
 #span3{
