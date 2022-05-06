@@ -161,6 +161,12 @@ li a :hover{
     display: table-cell;
     vertical-align: middle;
 }
+
+#span3{
+    display: table-cell;
+    vertical-align: middle;
+}
+
 /* Size for brand */
 nav .navbar-brand
 {
